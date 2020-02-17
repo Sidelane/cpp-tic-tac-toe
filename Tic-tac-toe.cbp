@@ -36,9 +36,15 @@
 		</Compiler>
 		<Unit filename="include/Board.h" />
 		<Unit filename="include/Player.h" />
+		<Unit filename="include/util.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Board.cpp" />
 		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/util.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />
