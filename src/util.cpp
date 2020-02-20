@@ -1,4 +1,4 @@
-#include "util.h"
+#include "../include/util.h"
 
 void random_start(Player &p1, Player &p2) {
     std::srand(time(NULL));
@@ -20,13 +20,13 @@ void init_board(Board &b) {
 
 void set_answer(Board &board, Player &p, std::vector<Player> &players) {
     int inp;
-    std::cout << p.GetPlayer() << "s Turn! Please specify the Field you want to change!" << std::endl;
+    std::cout << p.Getplayer() << "s Turn! Please specify the Field you want to change!" << std::endl;
     std::cin >> inp;
     if (inp <= 8 && board.CheckField(inp) == "-") {
-        board.playboard[inp] = p.GetPlayer();
+        board.playboard[inp] = p.Getplayer();
         p.SethasTurned(true);
         board.draw();
-        if (p.GetPlayer() == "X") {
+        if (p.Getplayer() == "X") {
             players[1].SethasTurned(false);
         } else {
             players[0].SethasTurned(false);

@@ -1,3 +1,7 @@
+#include <vector>
+#include "Player.h"
+#include "Board.h"
+
 #ifndef UTIL_H_INCLUDED
 #define UTIL_H_INCLUDED
 

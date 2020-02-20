@@ -1,5 +1,5 @@
 #include <string>
-#include "Player.h"
+#include "../include/Player.h"
 
 Player::Player(std::string player_char)
 {
