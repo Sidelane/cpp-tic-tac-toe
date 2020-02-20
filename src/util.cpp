@@ -20,7 +20,7 @@ void init_board(Board &b) {
 
 void set_answer(Board &board, Player &p, std::vector<Player> &players) {
     int inp;
-    std::cout << p.Getplayer() << "s Turn! Please specify the Field you want to change!" << std::endl;
+    std::cout << p.Getplayer() << "s Turn! Please specify the Field you want to change! (0-8)" << std::endl;
     std::cin >> inp;
     if (inp <= 8 && board.CheckField(inp) == "-") {
         board.playboard[inp] = p.Getplayer();
