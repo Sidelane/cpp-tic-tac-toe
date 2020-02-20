@@ -25,6 +25,7 @@ void set_answer(Board &board, Player &p, std::vector<Player> &players) {
     if (inp <= 8 && board.CheckField(inp) == "-") {
         board.playboard[inp] = p.Getplayer();
         p.SethasTurned(true);
+        system("clear");
         board.draw();
         if (p.Getplayer() == "X") {
             players[1].SethasTurned(false);
