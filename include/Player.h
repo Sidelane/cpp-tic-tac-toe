@@ -7,7 +7,6 @@ class Player
 {
     public:
         Player(std::string player_char);
-
         bool GethasTurned() { return hasTurned; }
         void SethasTurned(bool val) { hasTurned = val; }
         std::string Getplayer() { return player; }
