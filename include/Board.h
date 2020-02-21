@@ -1,10 +1,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include <iostream>
-#include <stdlib.h>
 #include <string>
-#include <algorithm>
 #include "Player.h"
 
 class Board
